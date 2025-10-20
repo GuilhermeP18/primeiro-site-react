@@ -5,10 +5,23 @@ const BackgroundImage = () => {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener("scroll", handleScroll);
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setScrollY(window.scrollY);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+
 
   const containerStyle = {
     position: "relative",
@@ -23,7 +36,7 @@ const BackgroundImage = () => {
     height: "100%",
     objectFit: "cover",
     objectPosition: "bottom",
-  transform: `translateY(${Math.min(scrollY * 0.5, 110)}px)`,
+    transform: `translateY(${Math.min(scrollY * 0.5, 110)}px)`,
     filter: `blur(${Math.min(scrollY / 100, 5)}px) brightness(${1 - Math.min(scrollY / 1000, 0.3)})`,
     transition: "transform 0.8s cubic-bezier(0.4,0,0.2,1), filter 0.8s cubic-bezier(0.4,0,0.2,1)"
   };
@@ -65,7 +78,7 @@ const BackgroundImage = () => {
         <div style={welcomeStyle}>SEJA BEM-VINDO</div>
       </div>
     </>
-  ) 
+  )
 };
 
 export default BackgroundImage;
