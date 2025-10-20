@@ -18,9 +18,27 @@ function Main() {
     return (
         <main>
             <div className="mainContent">
-                <div className="contentGrade">
-                    <h2>Projetos em andamento</h2>]
-                    
+                <div>
+                    <h2 >Projetos em andamento</h2>
+                </div>
+                <div className="contentMainGrade">
+
+                    <div className="contentGrid">
+                        <img src="" alt="" />
+                        <h3>Projeto1</h3>
+                    </div>
+                    <div className="contentGrid">
+                        <img src="" alt="" />
+                        <h3>Projeto2</h3>
+                    </div>
+                    <div className="contentGrid">
+                        <img src="" alt="" />
+                        <h3>Projeto3</h3>
+                    </div>
+                    <div className="contentGrid">
+                        <img src="" alt="" />
+                        <h3>Projeto4</h3>
+                    </div>
                 </div>
             </div>
         </main>
