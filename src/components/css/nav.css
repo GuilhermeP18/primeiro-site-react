@@ -5,21 +5,10 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background: rgba(0,0,0,0.1); /* cor do trilho */
 }
-body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Quicksand', sans-serif;
-	height: 120vh;
-	background-image: url('../../assets/anime4k.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
 .navContainer {
 		margin: 10px;
 		border-radius: 12px;
-		background: rgba(44, 28, 28, 0.25);
+		background: rgba(216, 216, 216, 0.25);
 		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
@@ -66,7 +55,7 @@ body {
 	font-size: 1rem;
 	font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
 	text-transform: uppercase;
-	color: #e4e1e1;
+	color: #1d1b1b;
 	border-radius: 4px;
 	cursor: pointer;
 	transition: color 0.2s;

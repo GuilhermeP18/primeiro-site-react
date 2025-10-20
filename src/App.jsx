@@ -11,9 +11,8 @@ function App() {
     >
       <Nav />
       <main style={{ flex: 1, padding: "20px" }}>
-        <div style={{ height: "100vh" }}>
-          <p>Conteúdo para testar o scroll...</p>
-        </div>
+        <div style={{ height: "100vh" }}></div>
+        
       </main>
       <Footer />
     </div>

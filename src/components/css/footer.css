@@ -1,6 +1,47 @@
 .containerFooter {
     width: 100%;
     height: 150px;
-    background-color: #222;
+    background-color: rgba(216, 216, 216, 0.25);
+    box-shadow: 0 -8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.redesSociais {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.redesSociais span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    }
+.redesSociais ul {
+    display: flex;
+    flex-direction: column;
+}
+.redesSociais ul li{
+    display: flex;
+    margin: 6px 0;
     
+}
+.redesSociais ul li a:hover{
+    transition: transform 0.2s;
+    color: rgba(8, 68, 180, 0.8);
+}
+.redesSociais ul li a {
+    margin-top: 5px;
+}
+.containerLeft{
+    float: left;
+    width: 50%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerRight{
+    float: right;
+    width: 50%;
+    height: 150px;
 }
