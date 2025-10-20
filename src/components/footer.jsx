@@ -10,8 +10,8 @@ const Footer = () => {
             <div className="redesSociais">
                 <span>Redes Sociais</span>
                 <ul>
-                    <li><img src={githubIcon} alt="github" width={32} height={32} style={{ marginRight: '8px' }} /><a href="https://github.com/seu-perfil" target="_blank" rel="noopener noreferrer">Github</a></li>
-                    <li><img src={linkedinIcon} alt="linkedin" width={32} height={32} style={{ marginRight: '8px' }} /><a href="https://www.linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><img src={githubIcon} alt="github" width={32} height={32} style={{ marginRight: '8px' }} /><a href="https://github.com/GuilhermeP18" target="_blank" rel="noopener noreferrer">Github</a></li>
+                    <li><img src={linkedinIcon} alt="linkedin" width={32} height={32} style={{ marginRight: '8px' }} /><a href="https://www.linkedin.com/in/luis-guilherme-pereira-ba8a54236/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
