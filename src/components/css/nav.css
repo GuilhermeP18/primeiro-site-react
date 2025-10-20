@@ -1,0 +1,93 @@
+body::-webkit-scrollbar-thumb {
+  background: #ff6347;      /* cor do “puxador” */
+  border-radius: 4px;       /* borda arredondada */
+}
+body::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1); /* cor do trilho */
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	height: 120vh;
+	background-image: url('../../assets/anime4k.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.navContainer {
+		margin: 10px;
+		border-radius: 12px;
+		background: rgba(44, 28, 28, 0.25);
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 24px;
+		position: fixed;
+		top: 10px;
+		left: 10px;
+		right: 10px;
+		height: 70px;
+		max-width: 100%;
+		width: auto;
+		z-index: 1000;
+			transition: transform 0.3s ease;
+		}
+
+		.navContainer--hidden {
+			transform: translateY(-130%);
+		}
+
+.leftNavContainer {
+	display: flex;
+	align-items: center;
+}
+.rightNavContainer {
+	display: flex;
+	align-items: center;
+}
+.leftNavContainer ul,
+.rightNavContainer ul {
+	list-style: none;
+	display: flex;
+	gap: 32px;
+	margin: 0;
+	padding: 0;
+}
+.leftNavContainer li,
+.rightNavContainer li {
+	position: relative;
+	padding: 10px 20px;
+	font-size: 1rem;
+	font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
+	text-transform: uppercase;
+	color: #e4e1e1;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: color 0.2s;
+	overflow: hidden;
+}
+.leftNavContainer li:hover,
+.rightNavContainer li:hover {
+	color: #ff6347;
+}
+.leftNavContainer li::after,
+.rightNavContainer li::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 3px;
+	background: #ff6347;
+	transition: width 0.3s ease;
+}
+.leftNavContainer li:hover::after,
+.rightNavContainer li:hover::after {
+	width: 100%;
+}
