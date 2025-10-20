@@ -1,13 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Nav from './components/nav.jsx'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import Nav from "./components/nav.jsx";
+import Footer from "./components/footer.jsx";
 
 function App() {
-  
   return (
-    <Nav/>
-    )
+    <div
+      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+    >
+      <Nav />
+      <main style={{ flex: 1, padding: "20px" }}>
+        <div style={{ height: "100vh" }}>
+          <p>Conteúdo para testar o scroll...</p>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
