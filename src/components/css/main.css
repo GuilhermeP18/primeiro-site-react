@@ -3,7 +3,7 @@
     background-color: #181818;
     width: 100%;
     min-width: 260px;
-    max-width: 400px;
+    max-width: 680px;
     min-height: 220px;
     padding: 24px 18px;
     color: white;
@@ -16,34 +16,51 @@
     transition: transform 0.2s, box-shadow 0.2s;
     text-align: center;
 }
-/* Heading Styles */
+
+.contentGrid img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+    object-fit: contain;
+    z-index: 1;
+}
+
 .contentGrid > h3 {
     width: 100%;
     text-align: center;
     font-size: 1.4rem;
     margin-bottom: 10px;
 }
-/* Paragraph Styles */
+
 .contentGrid p {
     margin: 12px 0 10px 0;
     width: 100%;
     font-size: 1rem;
     text-align: justify;
 }
+
 main{
-    width: auto;
+    width: 100%;
+    min-height: calc(100vh - 250px);
     height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+    flex: 1; /* Permite que o main cresça */
 }
 
 .mainContainer {
     background-color: azure;
     width: 100%;
-    height: 100vh;
+    min-height: 100%; /* Mudado de height: 100vh */
+    height: auto; /* Permite crescimento automático */
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding-bottom: 32px;
 }
+
 .mainTitle{
     width: 100%;
     margin-top: 20px;
@@ -52,13 +69,17 @@ main{
     align-items: center;
     background-color: beige;
 }
-
+.mainTitle p{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
 .projects{
     width: 80%;
-    height: 100vh;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 32px;
+    padding: 32px 0; /* Adiciona espaçamento interno */
 }

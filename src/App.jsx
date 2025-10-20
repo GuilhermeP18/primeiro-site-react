@@ -7,8 +7,14 @@ function App() {
   return (
     <>
       <BackgroundImage />
-      <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh", position: "relative", zIndex: 1 }}>
-        <Nav />
+      <Nav />
+      <div style={{ 
+        display: "flex", 
+        flexDirection: "column", 
+        minHeight: "100vh", 
+        position: "relative", 
+        zIndex: 1 
+      }}>
         <Main />
         <Footer />
       </div>
