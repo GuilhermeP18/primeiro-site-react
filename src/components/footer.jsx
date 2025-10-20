@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
         <div className="containerRight">
             
-        </div>
+        </div> 
     </div>
   );
 };
