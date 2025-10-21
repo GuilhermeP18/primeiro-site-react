@@ -8,16 +8,8 @@ function App() {
     <>
       <BackgroundImage />
       <Nav />
-      <div style={{ 
-        display: "flex", 
-        flexDirection: "column", 
-        minHeight: "100vh", 
-        position: "relative", 
-        zIndex: 1 
-      }}>
-        <Main />
-        <Footer />
-      </div>
+      <Main />
+      <Footer />
     </>
   );
 }
