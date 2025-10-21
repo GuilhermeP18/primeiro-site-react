@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import "./css/nav.css";
+import "../styles/nav.css";
 
 function Nav() {
   const [hideNav, setHideNav] = useState(false);
