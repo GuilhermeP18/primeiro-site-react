@@ -1,28 +1,70 @@
 import { React } from "react";
 import MainContainer from "./AnimationCard.jsx";
 import "../styles/main.css";
+import Desenv from "../assets/dev.jpg";
 
 function Main() {
+  const projectCards = [
+    {
+      id: 1,
+      title: "Project Title",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, harum? Voluptate reiciendis earum fugit nostrum cum delectus maiores distinctio dolores! Expedita delectus ab dolores itaque reprehenderit vitae doloribus, fuga fugit.",
+      imageUrl: Desenv,
+    },
+    {
+      id: 2,
+      title: "Project Title",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, harum? Voluptate reiciendis earum fugit nostrum cum delectus maiores distinctio dolores! Expedita delectus ab dolores itaque reprehenderit vitae doloribus, fuga fugit.",
+      imageUrl: Desenv,
+    }
+  ];
   const mainContainerCard = {
     width: "100%",
     height: "auto",
     backgroundColor: "#31777cff",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    display: "grid",
+    gridTemplateColumns: "repeat(2, 1fr)",
+    justifyItems: "center",
+    alignItems: "start",
+    padding: "40px 0"
   };
 
   const cardStyle = {
-    width: "300px",
-    height: "400px",
+    width: "90%",
+    height: "auto",
+    padding: "20px",
     backgroundColor: "#ffffff",
+    margin: "0",
+    boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+    borderRadius: "12px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center"
+  };
+  const h1Text = {
+    fontSize: "4rem",
+    color: "#333333",
+    textAlign: "center",
+    margin: "20px 0",
+    textTransform: "uppercase"
   };
   return (
     <>
-    <div><h1>Portifolio</h1></div>
-    <div style={mainContainerCard}>
-    <div style={cardStyle}></div>
-    </div>
+      <div>
+        <h1 style={h1Text}>Portifolio</h1>
+      </div>
+
+      <div style={mainContainerCard}>
+        {projectCards.map((card) => (
+          <div key={card.id} style={cardStyle}>
+            <img src={card.imageUrl} alt={card.title} style={{ width: "100%", height: "auto", borderRadius: "12px 12px 0 0" }} />
+            <h2 style={{ margin: "20px 0" }}>{card.title}</h2>
+            <p>{card.description}</p>
+
+          </div>
+        ))}
+      </div>
     </>
   );
 }

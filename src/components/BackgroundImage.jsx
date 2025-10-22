@@ -29,6 +29,7 @@ const BackgroundImage = () => {
     height: "100vh",
     overflow: "hidden",
     zIndex: 1
+    
   };
 
   const imageStyle = {
