@@ -34,13 +34,13 @@ function Main() {
     height: "auto",
     padding: "20px",
     backgroundColor: "#ffffff",
-    margin: "0",
-    boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
-    borderRadius: "12px",
+    margin: "0", 
+    borderRadius: "7px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center"
+    
     
   };
   const h1Text = {
