@@ -41,13 +41,15 @@ function Main() {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center"
+    
   };
   const h1Text = {
-    fontSize: "4rem",
+    fontSize: "100%",
     color: "#333333",
     textAlign: "center",
     margin: "20px 0",
-    textTransform: "uppercase"
+    textTransform: "uppercase",
+    fontSize: "clamp(2rem, 8vw, 4rem)"
   };
   return (
     <>
@@ -58,7 +60,7 @@ function Main() {
       <div style={mainContainerCard}>
         {projectCards.map((card) => (
           <div key={card.id} style={cardStyle}>
-            <img src={card.imageUrl} alt={card.title} style={{ width: "100%", height: "auto", borderRadius: "12px 12px 0 0" }} />
+            <img src={card.imageUrl} alt={card.title} style={{ width: "100%", height: "75vh", borderRadius: "12px 12px 0 0" }} />
             <h2 style={{ margin: "20px 0" }}>{card.title}</h2>
             <p>{card.description}</p>
 
