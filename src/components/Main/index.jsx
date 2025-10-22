@@ -1,7 +1,6 @@
 import { React } from "react";
-import MainContainer from "./AnimationCard.jsx";
-import "../styles/main.css";
-import Desenv from "../assets/dev.jpg";
+import "../../styles/main.css";
+import Desenv from "../../assets/dev.jpg";
 
 function Main() {
   const projectCards = [
