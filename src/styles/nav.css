@@ -1,0 +1,38 @@
+.active{
+    background-color: rgb(8, 78, 207);
+}
+.navbar {
+    display: flex;
+    justify-self: unset;
+    align-items: center;
+    background-color: rgba(1, 4, 163, 0.747);
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar ul li a{
+    font-size: 1.2rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+.navbar ul .left-nav {  
+    margin-left: auto;
+}
+.navbar ul li a:not(.active):hover {
+    background-color: rgba(28, 56, 180, 0.849);
+    border-radius: 5px;
+}
+.titulo {
+    font-size: 5rem;
+    margin: 1rem;
+}
+.noHover:hover {
+    background: none !important
+}

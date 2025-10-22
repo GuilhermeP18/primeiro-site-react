@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/footer.css";
-import githubIcon from "../assets/github.png";
-import linkedinIcon from "../assets/linkedin.png";
+import "../../styles/footer.css";
+import githubIcon from "../../assets/github.png";
+import linkedinIcon from "../../assets/linkedin.png";
 
 // Crie um componente para os links sociais
 const SocialLink = ({ href, icon, alt, children }) => (
