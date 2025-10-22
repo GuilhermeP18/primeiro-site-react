@@ -1,38 +1,36 @@
 .active{
-    background-color: rgb(8, 78, 207);
+    background-color: #647ff6;
 }
 .navbar {
+    height: 70px;
     display: flex;
-    justify-self: unset;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgba(1, 4, 163, 0.747);
+    background-color: #0f172a;
+    overflow: hidden;
 }
 .navbar ul {
     display: flex;
     list-style: none;
     padding: 0;
-    margin: 0;
+    gap: 2rem;
 }
 .navbar ul li a{
     font-size: 1.2rem;
     display: block;
     text-decoration: none;
     color: white;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 2px;
 }
-.navbar ul .left-nav {  
-    margin-left: auto;
-}
 .navbar ul li a:not(.active):hover {
-    background-color: rgba(28, 56, 180, 0.849);
+    background-color: #172554;
     border-radius: 5px;
 }
-.titulo {
-    font-size: 5rem;
-    margin: 1rem;
+.right-nav {
+    margin-right: 3rem;
 }
+
 .noHover:hover {
     background: none !important
 }
