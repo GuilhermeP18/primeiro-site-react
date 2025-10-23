@@ -8,10 +8,7 @@ function Nav() {
   return (
     <header >
       <nav className="navbar">
-        <ul className="left-nav">
-          <li className="siteLogo"><Link to="/" className="noHover">PortiFolio</Link></li>
-        </ul>
-        <ul className="right-nav">
+        <ul className="ul-nav">
           <li><NavLink to="/about" >Sobre</NavLink></li>
           <li><NavLink to="/contact" >Contato</NavLink></li>
         </ul>
