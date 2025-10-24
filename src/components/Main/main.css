@@ -4,5 +4,5 @@
   align-items: center;
   justify-content: center;
   height: 70vh;
-  background: linear-gradient(180deg,rgba(13, 13, 13, 0.97) 20%, rgba(4, 4, 4, 1) 50%, rgba(13, 13, 13, 1) 100%);
+  background: #000000;
 }

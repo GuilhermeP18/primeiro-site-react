@@ -1,7 +1,8 @@
 .footer{
     height: 190px;
     width: 100%;
-    background-color: #0f172a;
+    border-top: 1px solid rgba(255, 253, 253, 0.164);
+    background-color: #000000f3;
     display: flex;
     overflow: hidden;
 }
@@ -32,8 +33,6 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    
-    background-color: #0f172a;
     color: white;   
 }
 .rightContainer{
@@ -44,7 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0f172a;
+
 }
 .rightList li{
     display: flex;
