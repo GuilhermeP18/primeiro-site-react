@@ -3,18 +3,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0f172a;
+    background: #000000;
+    border-bottom: 1px solid rgba(255, 253, 253, 0.24);
     overflow: hidden;
     padding: 3rem 0;
-    
 }
+
 .navbar ul {
     display: flex;
     list-style: none;
     padding: 0;
     gap: 2rem;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     font-size: 1.2rem;
     display: block;
     text-decoration: none;
@@ -22,6 +24,7 @@
     padding: 0.5rem 1rem;
     position: relative;
 }
+
 .navbar ul li a::after {
     content: "";
     position: absolute;
@@ -32,9 +35,11 @@
     left: 0;
     transition: width 0.2s ease;
 }
+
 .navbar ul li a:hover::after {
     width: 100%;
 }
+
 .navbar ul li a.active::after {
     width: 100%;
 }
