@@ -2,15 +2,12 @@ import { React } from "react";
 import "./main.css";
 
 
-function Main() {
-  
+
+function Main({ children }) {
   return (
-
     <div className="main">
-     
+      {children}
     </div>
-
-
   );
 }
 

@@ -1,12 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './Home.css';
 
 const Home = () => {
   return (
-    <div>
-      
+    <div className="home-container">      
+      <div className="sobreMimSection">
+        <h1>dsadasdasdadas</h1>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Home;
-export { Home };
