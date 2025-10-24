@@ -1,22 +1,24 @@
 import React from 'react'
+import reacticon from '../../assets/react.png'
 import './footer.css'
+
+
 const Footer = () => {
   return (
     <div className='footer'>
       <div className="leftContainer">
-        <ul>
-          <li>Desenvolvido por <a href="https://www.linkedin.com/in/seu-perfil/" target="_blank" rel="noopener noreferrer">Luis Guilherme Pereira</a></li>
+        <ul className='leftList'>
+          <li>Desenvolvido por <span style={{ color: 'rgba(173, 173, 173, 1)' }}>Luis Guilherme</span></li>
           <li>© 2023 Todos os direitos reservados</li>
-          <li>Contato: <a href="mailto:seuemail@example.com">luisguilhermep16@gmail.com</a></li>
           <li>Redes sociais: 
             <a href="https://www.linkedin.com/in/luis-guilherme-pereira-ba8a54236/" target="_blank" rel="noopener noreferrer"> LinkedIn</a> |
-            <a href="https://www.instagram.com/seuperfil/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.instagram.com/seuperfil/" target="_blank" rel="noopener noreferrer"> Instagram</a>
           </li>
         </ul>
       </div>
       <div className="rightContainer">
-        <ul>
-          <li>Feito com ❤️ usando React</li>
+        <ul className='rightList'>
+          <li>Feito com ❤️ usando  <img src={reacticon} width="36" height="36" alt="React icon" /></li>
           <li>Este site é um projeto de portfólio para demonstrar habilidades em desenvolvimento web.</li>
         </ul>
       </div>

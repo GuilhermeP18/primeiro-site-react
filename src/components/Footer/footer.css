@@ -3,7 +3,7 @@
     width: 100%;
     background-color: #0f172a;
     display: flex;
-
+    overflow: hidden;
 }
 .footer div ul {
     display: flex;
@@ -16,9 +16,15 @@
 }
 .footer div ul li a{
     text-decoration: none;
-    color: rgb(1, 196, 98);
+    color: rgba(11, 125, 231, 0.952);
 
 }
+.footer div ul li a:hover{
+    text-decoration: none;
+    color: rgb(13, 207, 30);
+
+}
+
 .leftContainer{
     width: 50%;
     padding: 1rem 1rem 1rem 5rem;
@@ -39,4 +45,9 @@
     align-items: center;
     justify-content: center;
     background-color: #0f172a;
+}
+.rightList li{
+    display: flex;
+    align-items: center;
+
 }
