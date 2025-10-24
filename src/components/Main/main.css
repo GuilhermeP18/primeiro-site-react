@@ -1,8 +1,8 @@
-.color-trail {
-  transition: color 0.2s;
-  color: #222;
-  font-size: 2rem;  
-}
-.color-trail:hover {
-  color: #ff6600; /* cor ao passar o mouse */
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+  background-color: #d80b0b93;
 }

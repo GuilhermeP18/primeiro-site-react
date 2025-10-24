@@ -5,6 +5,7 @@
     align-items: center;
     background-color: #0f172a;
     overflow: hidden;
+    
 }
 .navbar ul {
     display: flex;

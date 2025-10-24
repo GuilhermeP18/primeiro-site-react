@@ -1,5 +1,42 @@
-div.footer{
-    height: 160px;
+.footer{
+    height: 190px;
     width: 100%;
+    background-color: #0f172a;
+    display: flex;
+
+}
+.footer div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer div ul li{
+    list-style: none;
+
+}
+.footer div ul li a{
+    text-decoration: none;
+    color: rgb(1, 196, 98);
+
+}
+.leftContainer{
+    width: 50%;
+    padding: 1rem 1rem 1rem 5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+    background-color: #0f172a;
+    color: white;   
+}
+.rightContainer{
+    color: white;
+    width: 50%;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #0f172a;
 }
