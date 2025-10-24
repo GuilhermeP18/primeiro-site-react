@@ -1,5 +1,5 @@
 import { React } from "react";
-import "../../styles/main.css";
+import "./main.css";
 import Desenv from "../../assets/dev.jpg";
 
 function Main() {
@@ -52,20 +52,12 @@ function Main() {
   };
   return (
     <>
-      <div>
-        <h1 style={h1Text}>Portifolio</h1>
+    <main>
+      <div className="mainContainer">
+        <h1 style={h1Text}>Projetos</h1>
       </div>
-
-      <div style={mainContainerCard}>
-        {projectCards.map((card) => (
-          <div key={card.id} style={cardStyle}>
-            <img src={card.imageUrl} alt={card.title} style={{ width: "100%", height: "75vh", borderRadius: "12px 12px 0 0" }} />
-            <h2 style={{ margin: "20px 0" }}>{card.title}</h2>
-            <p>{card.description}</p>
-
-          </div>
-        ))}
-      </div>
+    </main>
+      
     </>
   );
 }
